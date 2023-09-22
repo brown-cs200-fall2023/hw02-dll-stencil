@@ -26,6 +26,14 @@ public class Homework2TestSuite {
         //  (the setup method runs before *each* test method, thus resetting the data)
     }
 
+    /**
+     * An example test
+     */
+    @Test
+    public void testExample() {
+        Assert.assertEquals(2, 1 + 1);
+    }
+
     /* ******* HELPER METHOD FOR COMPARING LISTS **********
        Note: you may uncomment this method below to use in your testing suite
        after you've completed your get method if you'd like.
