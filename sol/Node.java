@@ -44,6 +44,19 @@ public class Node<S> {
     public S getItem() { return this.item; }
 
     /**
+     * Returns the number of elements in the list
+     *
+     * @return the number of elements in the list
+     */
+    public int size() {
+        if (this.next == null) {
+            return 1;
+        } else {
+            return (1 + this.next.size());
+        }
+    }
+
+    /**
      * Returns a boolean indicating if the Node has a Node as its next field.
      *
      * @return true if the Node has a next Node, false otherwise

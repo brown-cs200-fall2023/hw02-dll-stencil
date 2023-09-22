@@ -59,8 +59,11 @@ public class MutableList<T> implements IList<T> { //, IListWithNode<T> {
    */
   @Override
   public int size() {
-    // TODO: finish here
-    return 0;
+    if (this.start == null) {
+      return 0;
+    } else {
+      return this.start.size();
+    }
   }
 
   /**
